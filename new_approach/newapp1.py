@@ -62,7 +62,7 @@ def compare_parameters_with_crop_requirements(soil_data, crop_name, crop_data):
 # Load crop data from a CSV file
 def load_crop_data():
     try:
-        crop_data = pd.read_csv("/Users/aryan/Downloads/4th Year Project - Aryan/Implementation- SHR/new_approach/crop_data.csv")
+        crop_data = pd.read_csv("new_approach/crop_data.csv")
         crop_data.columns = crop_data.columns.str.strip().str.lower()
         return crop_data
     except FileNotFoundError:
